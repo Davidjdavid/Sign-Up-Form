@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!--Main flex box to hold everything-->
+    <div class="main">
+        <!--Div to hold the images and stuff-->
+        <div class="sideBar">
+            <div class="cardContainer">
+                <img class="odinLogo" src="Odin Outline.png">
+                <div class="odinTag">ODIN</div>
+            </div>
+        </div>
+
+        <!--Second flexbox-->
+        <div class="content">
+            <!--Top third-->
+            <div class="mainText">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <i>now</i> to get started.
+                </p>
+                <p class="extraText">
+                    You <i>know</i> you want to.
+                </p>
+            </div>
+            
+            <!--Middle third-->
+            <form>
+                <div class="contentForm">
+                    <h2 class="formTitle">Let's do this!</h2>
+                    <div class="input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" class="first_name" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="input">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="last_name" minlength="1" maxlength="30" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" class="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div class="input">
+                        <label for="pass">Password</label>
+                        <input type="password" class="pass" required>
+                    </div>
+                    <div class="input">
+                        <label for="passAgain">Confirm Password</label>
+                        <input type="password" class="passAgain" required>  
+                    </div>
+                </div>
+                <button class="btnCreate">Create Account</button>
+            </form>
+            <!--Bottom third-->
+            <div class="loginText">
+                <p>Already have an account? <a href="/">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

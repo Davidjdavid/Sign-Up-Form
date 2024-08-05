@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    --sideBarWidth: 40vw;
+}
+
+body {
+    background-color: #0e0e0e;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sideBar {
+    background-image: url("Green Plants.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: var(--sideBarWidth);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.mainText {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 40px;
+}
+
+.btnCreate {
+    margin: 30px;
+    padding: 10px;
+}
+
+.loginText {
+    padding: 30px;
+}
+
+.contentForm {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 1px lightgray;
+    background-color: #ffffff;
+}
+
+.input {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.formTitle {
+    width: 100%;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardContainer {
+    position: relative;
+    background: black;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: var(--sideBarWidth);
+}
+
+.odinLogo {
+    width: 20%;
+    padding: 5%;
+}
+
+.odinTag {
+    position: relative;
+    top: 50%;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
