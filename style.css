@@ -1,7 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    --sideBarWidth: 40vw;
+    --sideBarMinWidth: 25vw;
+    --sideBarMaxWidth: 40vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("Norse-Bold.otf");
+}
+
+input:focus {
+    outline: none;
 }
 
 body {
@@ -22,7 +33,10 @@ body {
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    width: var(--sideBarWidth);
+    min-width: var(--sideBarMinWidth);
+    max-width: var(--sideBarMaxWidth);
+    position: relative
+
 }
 
 .content {
@@ -30,25 +44,33 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #f9fafb;
+    flex-grow: 2;
 }
 
 .mainText {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
     align-content: space-around;
     padding: 40px;
 }
 
 .btnCreate {
-    margin: 30px;
-    padding: 10px;
+    margin: 45px 30px;
+    background-color: #596D48;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 .loginText {
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .contentForm {
@@ -56,6 +78,7 @@ body {
     flex-flow: row wrap;
     gap: 20px;
     padding: 20px;
+    padding-left: 40px;
     box-shadow: 0px 5px 1px lightgray;
     background-color: #ffffff;
 }
@@ -64,6 +87,7 @@ body {
     width: 40%;
     display: flex;
     flex-flow: column wrap;
+    border-color: #E5E7EB;
 }
 
 .formTitle {
@@ -73,7 +97,7 @@ body {
 .sideBar {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cardContainer {
@@ -84,7 +108,9 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    width: var(--sideBarWidth);
+    min-width: var(--sideBarMinWidth);
+    max-width: var(--sideBarMaxWidth);
+    margin-top: 20vh;
 }
 
 .odinLogo {
@@ -94,14 +120,50 @@ body {
 
 .odinTag {
     position: relative;
-    top: 50%;
+    top: 35%;
+    font-family: 'Norse', 'Courier New', Courier, monospace;
+    font-size: 60px;
 }
 
-input:invalid {
-    border-color: red;
+input {
+    height: 30px;
+    width: 80%;
+    padding: 5px;
 }
 
-input:valid {
-    border-color: green;
+label {
+    color: #414040;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
+.extraText {
+    padding-top: 20px;
+}
+
+.loginText a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input:focus {
+    border: 1px solid #2a4ed8;
+    box-shadow: 2px 2px 4px #969292;
+    border-color: #2a4ed8;
+}
+
+.photoCredit {
+    color: #ffffff;
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.photoCredit a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
