@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: "Norse";
-    src: url("Norse-Bold.otf");
+    font-family: "Kanit";
+    src: url("Kanit-SemiBold.ttf");
 }
 
 input:focus {
@@ -29,7 +29,7 @@ body {
 }
 
 .sideBar {
-    background-image: url("Green Plants.png");
+    background-image: url("Sunset.jpg");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body {
 
 .btnCreate {
     margin: 45px 30px;
-    background-color: #596D48;
+    background-color: #8c5b7a;
     border: none;
     color: white;
     padding: 20px;
@@ -113,15 +113,15 @@ body {
     margin-top: 20vh;
 }
 
-.odinLogo {
-    width: 20%;
+.sunLogo {
+    width: 25%;
     padding: 5%;
 }
 
-.odinTag {
+.sunTag {
     position: relative;
     top: 35%;
-    font-family: 'Norse', 'Courier New', Courier, monospace;
+    font-family: 'Kanit', 'Courier New', Courier, monospace;
     font-size: 60px;
 }
 
@@ -142,7 +142,7 @@ label {
 }
 
 .loginText a {
-    color: #596D48;
+    color: #8c5b7a;
     font-weight: bold;
     text-decoration: none;
 }
@@ -154,7 +154,7 @@ input:focus {
 }
 
 .photoCredit {
-    color: #ffffff;
+    color: black;
     display: flex;
     font-size: smaller;
     justify-content: center;
@@ -163,7 +163,7 @@ input:focus {
 
 
 .photoCredit a {
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
